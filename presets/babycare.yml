@@ -1,0 +1,147 @@
+name:
+  default: Baby Care amenities preset
+  en: Baby Care amenities  preset
+  version: '0.1'
+  author: GOwin
+  schema: "0.1"
+  description: Mapping amenties related to baby care.
+image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Breastfeeding-icon-med.svg/240px-Breastfeeding-icon-med.svg.png'
+groups:
+  - name:
+      default: Baby Care group
+      en: Baby Care group
+    url: 'https://wiki.openstreetmap.org/wiki/Proposed_features/babycare'
+    items:
+      - name: baby_feeding=yes
+        url: 'https://wiki.openstreetmap.org/wiki/Proposed_features/babycare'
+        label:
+          default: Baby feeding
+          description:
+          default: Baby feeding
+        keywords:
+          default:
+            - nursing
+            - breast feeding
+            - lactation
+        tags:
+          - key: baby_feeding
+            value: yes
+            type: SINGLE_CHOICE
+            values:
+              - yes:
+                  default: yes 
+                  en: Yes
+              - room:
+                  default: room
+                  en: Room
+              - no:
+                  default: no
+                  en: No
+            required: true
+          - key: wheelchair
+            type: SINGLE_CHOICE
+            description:
+              default: Accessibility for wheelchairs
+              en: Accessibility for wheelchairs
+            values:
+              - yes:
+                  default: yes 
+                  en: Yes
+              - no:
+                  default: no
+                  en: No
+              - limited:
+                  default: limited
+                  en: Limited
+            required: false
+          - key: opening_hours
+            type: OPENING_HOURS
+            description:
+              default: Opening hours
+              en: Opening hours
+            required: false
+          - key: baby_feeding:female
+            type: SINGLE_CHOICE
+            description:
+              default: Accessibility for wheelchairs
+              en: Accessibility for wheelchairs
+            values:
+              - yes:
+                  default: yes 
+                  en: Yes
+              - no:
+                  default: no
+                  en: No
+            required: false
+          - key: baby_feeding:female
+            type: SINGLE_CHOICE
+            description:
+              default: Accessibility for wheelchairs
+              en: Accessibility for wheelchairs
+            values:
+              - no:
+                  default: no
+                  en: No
+              - yes:
+                  default: yes 
+                  en: Yes
+      - name: diaper=yes
+        url: 'https://wiki.openstreetmap.org/wiki/Proposed_features/babycare'
+        label:
+          default: Diaper changing table
+          description: This is a fixture to change a baby's diaper. Often placed in a public toilet, and usually wall-mounted, fold-down shelf, with a safety strap to prevent a wiggly baby from falling off.
+          default: Diaper changing table
+        keywords:
+          default:
+            - diaper
+            - changing table
+        tags:
+          - key: diaper
+            value: yes
+            type: SINGLE_CHOICE
+            values:
+              - yes:
+                  default: yes 
+                  en: Yes
+              - room:
+                  default: room
+                  en: Room
+              - no:
+                  default: no
+                  en: No
+            required: true
+          - key: wheelchair
+            type: SINGLE_CHOICE
+            description:
+              default: Accessibility for wheelchairs
+              en: Accessibility for wheelchairs
+            values:
+              - yes:
+                  default: yes 
+                  en: Yes
+              - no:
+                  default: no
+                  en: No
+              - limited:
+                  default: limited
+                  en: Limited
+            required: false
+          - key: power_supply
+            type: SINGLE_CHOICE
+            description:
+              default: Describes availability of power supply sockets.
+              en: Describes availability of power supply sockets.
+            values:
+              - yes:
+                  default: yes 
+                  en: Yes
+              - no:
+                  default: no
+                  en: No
+           required = false
+          - key: opening_hours
+            type: OPENING_HOURS
+            description:
+              default: Opening hours
+              en: Opening hours
+            required: false
